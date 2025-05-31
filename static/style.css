@@ -1,4 +1,11 @@
-* {
-	color: magenta;
-	background-color: purple;
+.navbar {
+	background: #0065bd;
+	height: 10vh;
+	display: flex;
+	align-items: center;
 }
+
+.navbar-element{
+	margin-right: 3vw;
+}
+
