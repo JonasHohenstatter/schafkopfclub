@@ -1,3 +1,11 @@
 .menuitem:hover{
     color: #FED702 !important;
 }
+
+.menuitem {
+    transition: color 0.3s ease;
+}
+
+.text-tumblue {
+    color: #0065bd;
+}

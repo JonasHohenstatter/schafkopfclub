@@ -1,4 +1,62 @@
 {% extends "base.html" %}
 
 {% block content %}
+<div class="position-relative" style="height: 80vh;">
+    <img src="{{ url_for('static', filename='hero.png') }}" alt="Schafkopfrunde" class=" position-absolute w-100 h-100" style="object-fit: cover; z-index: -1; filter: brightness(25%)">
+    <div class="position-relative d-flex flex-column justify-content-center align-items-center text-center h-100" style="z-index: 2;">
+        <h1 class="display-1 fw-bold text-white">
+        <span class="text-tumblue">TUM</span> Schafkopf Club
+        </h1>
+        <p class="lead text-white">
+        Wir verbinden das beste Spiel der Welt mit dem Unialltag.
+        </p>
+    </div>
+</div>
+
+<!-- Cards under hero section -->
+<div class="container my-5">
+  <div class="row g-4">
+    <!-- Card 1 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="{{ url_for('static', filename='eichel.png')}}" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Turniere</h5>
+          <p class="card-text">
+            Unsere Schafkopf-Turniere bieten spannende Wettkämpfe für Schafkopfer aller Erfahrungsstufen.  
+            Melde dich an, sichere dir deinen Platz und zeig dein Können!  
+            Komm für weitere Infos und Termine auf unseren Discord!
+        </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="{{ url_for('static', filename='laub.png')}}" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Schafkopfabende</h5>
+          <p class="card-text">
+            Wir treffen uns regelmäßig zum gemütlichen Schafkopfen in lockerer Runde. 
+            Kein Druck, kein Turnier – einfach nur Spaß am Spiel, bayerische Gemütlichkeit und nette Gespräche.  
+            Komm vorbei, und lerne neue Mitspieler kennen!
+        </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="{{ url_for('static', filename='herz.png')}}" class="card-img-top" style="padding: 4vh">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Rangliste</h5>
+          <p class="card-text">
+            Unsere Rangliste erfasst nach jedem Turnier die Punkte und Platzierungen aller Spieler.  
+            So kannst du deinen Fortschritt verfolgen, sehen, wie du im Vergleich zu anderen stehst,  
+            und dich für kommende Spiele motivieren. 
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 {% endblock content %}
