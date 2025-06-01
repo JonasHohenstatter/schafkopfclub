@@ -1,11 +1,3 @@
-.navbar {
-	background: #0065bd;
-	height: 10vh;
-	display: flex;
-	align-items: center;
+.menuitem:hover{
+    color: #FED702 !important;
 }
-
-.navbar-element{
-	margin-right: 3vw;
-}
-
